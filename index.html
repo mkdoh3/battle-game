@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!-- Local CSS-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--jQuery script-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 top-head">
+                <div class="row mt-3">
+                    <div id='tie' class="ship-select dark-side col-3 card">
+                        <img class="card-img-top" src="assets/images/tie.png" alt="x-wing image">
+                        <div class="card-body">
+                            <h4 class="card-title">TIE Fighter</h4>
+                            <h5 id='tie-health' class="card-text"> 120 HP</h5>
+                        </div>
+                    </div>
+                    <div class="col-1"></div>
+
+                    <div id='lambda' class="ship-select dark-side col-3 card">
+                        <img class="card-img-top" src="assets/images/lambda.png" alt="lambda-class T-4a shuttle">
+                        <div class="card-body">
+                            <h4 class="card-title">Imperial Shuttle</h4>
+                            <h5 id='lambda-health' class="card-text"> 150 HP</h5>
+                        </div>
+                    </div>
+                    <div class="col-1"></div>
+
+                    <div id="destroyer" class="ship-select dark-side col-3 card">
+                        <img class="card-img-top" src="assets/images/destroyer.png" alt="star destroyer image">
+                        <div class="card-body">
+                            <h4 class="card-title">Star Destroyer</h4>
+                            <h5 id='destroyer-health' class="card-text"> 180 HP</h5>
+                        </div>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+                <h1 class="mt-2">Imperials</h1>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div id="play-field" class="col-12">
+
+                <div class="row">
+
+
+                    <div id="hero" class="middle-card col-3 card">
+                    </div>
+
+
+                    <div class="col-1"></div>
+
+
+                    <div id="center" class="middle-card col-3 card">
+                        <img class="card-img-top" src="assets/images/vs.png" alt="vs">
+                        <div id='center-text' class="card-body">
+                            <h3>Select a Ship to Begin!</h3>
+                        </div>
+                    </div>
+
+
+                    <div class="col-1"></div>
+
+
+                    <div id="foe" class="middle-card col-3 card">
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 bottom-head pt-3">
+                <h1 class="mb-3">Republic</h1>
+                <div class="row">
+                    <div class="ship-select light-side col-3 card" id="xwing">
+                        <img class="card-img-top" src="assets/images/x-wing.png" alt="x-wing image">
+                        <div class="card-body">
+                            <h4 class="card-title">X-Wing</h4>
+                            <h5 id='xwing-health' class="card-text"> 120 HP</h5>
+                        </div>
+                    </div>
+                    <div class="col-1"></div>
+
+                    <div id="falcon" class="ship-select light-side col-3 card">
+                        <img class="card-img-top" src="assets/images/falcon.png" alt="millenium falcon">
+                        <div class="card-body">
+                            <h4 class="card-title">Millenium Falcon</h4>
+                            <h5 id='falcon-health' class="card-text"> 150 HP</h5>
+                        </div>
+                    </div>
+                    <div class="col-1"></div>
+
+                    <div id="cruiser" class="ship-select light-side col-3 card">
+                        <img class="card-img-top" src="assets/images/cruiser.png" alt="mc cruiser image">
+                        <div class="card-body">
+                            <h4 class="card-title">MC80 Cruiser</h4>
+                            <h5 id='cruiser-health' class="card-text"> 180 HP</h5>
+                        </div>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--    jQuery, Bootstrap's JS, and local JS-->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="assets/javascript/game.js"></script>
+</body>
+
+</html>

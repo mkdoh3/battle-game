@@ -1,0 +1,76 @@
+body,
+html {
+    /*    height: 100vh;*/
+}
+
+body {
+    background: url("../images/space-background.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    letter-spacing: .5em;
+    margin-right: 2em;
+    color: #FFF;
+}
+
+#play-field {
+    width: 100%;
+    min-height: 300px;
+    background: rgba(0, 0, 0, 0.11)
+}
+
+.bottom-head h1 {
+    text-shadow: 1px 1px 10px #00FF00;
+}
+
+.top-head h1 {
+    text-shadow: 1px 1px 10px #FF0000;
+}
+
+.container {
+    min-width: 768px;
+}
+
+.card {
+    width: 33.33%;
+    background: transparent;
+    color: #FFF;
+    border: 1px solid #FFF;
+    text-align: center;
+}
+
+.card-img-top {
+    height: 128px;
+    width: 128px;
+    margin: 0 auto;
+    padding: .5em;
+}
+
+.card-body {
+    padding-bottom: .25em
+}
+
+.card-title {
+    margin-bottom: .25em;
+}
+
+.light-side:hover {
+    box-shadow: 1px 1px 40px #00FF00;
+}
+
+.dark-side:hover {
+    box-shadow: 1px 1px 40px #FF0000;
+}
+
+.middle-card {
+    border: none;
+    margin-top: 4em
+}
+
+#center img {
+    height: 168px;
+    width: 168px;
+}
