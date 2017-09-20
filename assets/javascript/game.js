@@ -1,10 +1,9 @@
-var goodGuy = '';
-var badGuy = '';
-var enemies = [];
-var deadGuys = [];
-var firstSelection = true;
-var secondSelection = false;
-var ships = {
+let goodGuy = '';
+let badGuy = '';
+let enemies = [];
+let firstSelection = true;
+let secondSelection = false;
+let ships = {
     "tie": {
         name: "TIE Fighter",
         team: "imperial",
@@ -48,14 +47,15 @@ var ships = {
         counterAttack: 16
     }
 };
+$(document).read
 
 $(document).ready(function () {
     $(".ship-select").on("click", function () {
         if (firstSelection) {
             firstSelection = false;
-            var clicked = $(this).attr('id');
+            let clicked = $(this).attr('id');
             goodGuy = clicked;
-            var selectedHTML = $(this).html();
+            let selectedHTML = $(this).html();
             ships.goodGuy = ships[clicked];
             document.getElementById(clicked).innerHTML = "";
             $("#hero").html(selectedHTML);
@@ -79,12 +79,12 @@ $(document).ready(function () {
     });
     $(".ship-select").on("click", function () {
         if (!firstSelection && !secondSelection) {
-            var clicked = $(this).attr('id');
+            let clicked = $(this).attr('id');
             badGuy = clicked;
             if ((enemies.indexOf(ships[clicked].name)) > -1) {
                 secondSelection = true;
                 ships.badGuy = ships[clicked];
-                var selectedHTML = $(this).html();
+                let selectedHTML = $(this).html();
                 document.getElementById(clicked).innerHTML = "";
                 $("#foe").html(selectedHTML);
                 document.getElementById(clicked + "-health").setAttribute('id', "foe-health");
